@@ -43,6 +43,7 @@ public class Checker
                 };
 
                 if (aThread.isAlive())
+                {
                     try
                     {
 						aThread.join();
@@ -51,7 +52,8 @@ public class Checker
                     {
 						e.printStackTrace();
                     }
-                    
+                }
+                
                 aThread.start();
             }
 
@@ -80,6 +82,7 @@ public class Checker
                 };
 
                 if (bThread.isAlive())
+                {
                     try
                     {
 						bThread.join();
@@ -88,7 +91,8 @@ public class Checker
                     {
 						e.printStackTrace();
                     }
-                    
+                }
+
                 bThread.start();
             }
 
@@ -117,6 +121,7 @@ public class Checker
                 };
 
                 if (cThread.isAlive())
+                {
                     try
                     {
 						cThread.join();
@@ -125,7 +130,8 @@ public class Checker
                     {
 						e.printStackTrace();
                     }
-                    
+                }
+
                 cThread.start();
             }
 
